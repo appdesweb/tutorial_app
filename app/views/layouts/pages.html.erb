@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true%>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true%>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand">Jump Start Rails</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container-fluid">
+        <div class="col-md-3 sidebar">
+         <ul class="nav nav-list">
+          <li class="nav-header">Sidebar</li>
+          <li class="active"><a href="#">Link</a></li>
+          <li class="nav-header">Sidebar</li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="nav-header">Sidebar</li>
+          <li><a href="#">Link</a></li></li>
+        </ul>
+        </div>
+        <div class="col-md-9">
+          <h2>This is the layout for the pages controller</h2>
+          <%= yield :note %>
+        </div>
+
+       <hr />
+       <footer><p>this is a footer</p></footer>
+      </div>
+  </body>
+</html>
